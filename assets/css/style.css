@@ -1,0 +1,23 @@
+button{
+
+    box-sizing: border-box;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+}
+
+#gem1{
+    background: url("../images/amathyst.jpg")
+}
+
+#gem2{
+    background: url("../images/garnet.jpeg")
+}
+
+#gem3{
+    background: url("../images/sapphire.jpg")
+}
+
+#gem4{
+    background: url("../images/tourmaline.jpg")
+}
