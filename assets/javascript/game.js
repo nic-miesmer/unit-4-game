@@ -1,5 +1,6 @@
 var min = 19;
 var max = 120;
+var randomNumber = 0;
 
 window.onload = function() {
 
@@ -8,12 +9,14 @@ window.onload = function() {
     $("#gem3").click();
     $("#gem4").click();
 
-    // console.log(gameRandom(min, max));
+    randomNumber = gameRandom(min, max);
   };
 
 
 
 var gameRandom = function randomNumberFromRange(min,max)
 {
-    return Math.floor(Math.random()*(max-min+1)+min);
+    randomNumber = Math.floor(Math.random()*(max-min+1)+min);
+    $("#randomNumber").text(randomNumber);
+
 }
