@@ -12,7 +12,7 @@ var gem3Value = Math.floor(Math.random() * 11) + 1;
 var gem4Value = Math.floor(Math.random() * 11) + 1;
 
 
-
+$("#randomNumber").text(randomNumber);
 $("#userScore").text("Current Score:" + userScore);
 $("#wins").text("Wins:" + wins);
 $("#losses").html("Losses:" + losses);
@@ -22,21 +22,17 @@ $("#losses").html("Losses:" + losses);
 
 var resetGame = function resetGame(){
 
-    gameRandomNum(min,max);
+    randomNumber = Math.floor(Math.random()*(max-min+1)+min);
+    $("#randomNumber").text(randomNumber);  
+    $("#userScore").text("Current Score: " + 0);
     gem1Value = Math.floor(Math.random() * 11) + 1;
     gem2Value = Math.floor(Math.random() * 11) + 1;
     gem3Value = Math.floor(Math.random() * 11) + 1;
     gem4Value = Math.floor(Math.random() * 11) + 1;
 
-}
-
-
-var gameRandomNum = function (min,max)
-{
-    randomNumber = Math.floor(Math.random()*(max-min+1)+min);
-    $("#randomNumber").text(randomNumber);
 
 }
+
 
 var win = function win(){
     wins++;
@@ -51,8 +47,6 @@ var lose = function lose(){
     resetGame();
 }
 
-
-randomNumber = gameRandomNum(min, max);
 
 $('#gem1').on ('click', function(){
     userScore = userScore + gem1Value;
