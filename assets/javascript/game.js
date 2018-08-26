@@ -21,7 +21,7 @@ $("#losses").html("Losses:" + losses);
 
 
 var resetGame = function resetGame(){
-
+    userScore = 0;
     randomNumber = Math.floor(Math.random()*(max-min+1)+min);
     $("#randomNumber").text(randomNumber);  
     $('#userScore').text(userScore); 
@@ -37,6 +37,7 @@ var resetGame = function resetGame(){
 var win = function win(){
     wins++;
     $("#wins").text("Wins: " + wins);
+    alert("Congratulations, you won! Play again!");
     resetGame();
 
 }
@@ -44,6 +45,7 @@ var win = function win(){
 var lose = function lose(){
     losses++;
     $("#losses").text("Losses: " + losses);
+    alert("Aww you lost. Try again!");
     resetGame();
 }
 
