@@ -1,13 +1,16 @@
 body{
     background: lightskyblue;
+    margin: 10px;
 }
+
 
 #title{
     font-size: xx-large;
-    background: orange;
+    background: darkorange;
     width: 250px;
-    padding: 15px;
+    padding: 10px;
     color: whitesmoke;
+    margin-bottom: 5px;
 
 }
 
@@ -16,13 +19,41 @@ body{
     background: wheat;
     color: green;
     padding:10px;
-    width: 50%
+    width: 50%;
+    margin-bottom: 5px;
+
+}
+
+#randomNumber {
+    background: green;
+    font-size: xx-large;
+    float:left;
+    width:100px;
+    height:100px;
+    padding:10px;
+    margin-bottom: 5px;
+
+}
+#record{
+    background: lightblue;
+    padding:10px;
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-bottom: 5px;
+
+
 }
 
 
+#buttons{
+    clear: both;
+    margin-bottom: 5px;
+
+}
+
 
 button{
-
     box-sizing: border-box;
     width: 200px;
     height: 200px;
@@ -44,3 +75,26 @@ button{
 #gem4{
     background: url("../images/tourmaline.jpg")
 }
+
+#scoreText{
+    font-size: larger;
+    padding: 10px;
+    background: darkcyan;
+    color: whitesmoke;
+    width: 200px;
+    margin-bottom: 5px;
+
+}
+#userScore{
+    font-size: larger;
+    padding: 10px;
+    background: darkcyan;
+    color: whitesmoke;
+    width: 25%;
+    margin-bottom: 5px;
+    height: 150px;
+    width: 200px;
+    font-size: xx-large;
+
+}
+
